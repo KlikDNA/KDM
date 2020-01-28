@@ -12,6 +12,9 @@
 
     <color name="Textbtn">#ffff</color>
 
+    <color name="bg_facebook_google">#E6E6E6</color>
+    <color name="bg_fb">#405A95</color>
+
 
     <!--reds-->
     <color name="md_red_50">#FFEBEE</color>

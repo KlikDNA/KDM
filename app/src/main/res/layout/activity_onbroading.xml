@@ -11,13 +11,12 @@
         android:id="@+id/btn_Daftar"
         android:layout_width="151dp"
         android:layout_height="37dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="@font/roboto"
         android:background="@drawable/bg_buttom2"
         android:includeFontPadding="true"
         android:text="@string/daftar"
-        android:textAllCaps="false"
         android:textColor="#fff"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,14 +26,15 @@
         android:id="@+id/btn_masuk"
         android:layout_width="151dp"
         android:layout_height="37dp"
-        android:layout_marginTop="18dp"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/bg_buttom1"
-        android:text="@string/masuk"
-        android:textAllCaps="false"
         android:fontFamily="@font/roboto"
+        android:text="@string/masuk"
         android:textColor="@color/btnmasuk"
         android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Daftar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tab_indicator" />
 
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,7 +51,7 @@
         android:id="@+id/tab_indicator"
         android:layout_width="56dp"
         android:layout_height="10dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="391dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,22 +67,22 @@
         android:id="@+id/lewati"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="36dp"
         android:text="Lewati"
         android:textColor="@color/btn_bg_blue"
         android:fontFamily="@font/roboto_medium"
         android:layout_marginRight="24dp"
         android:textSize="16sp"
-         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view"
-        android:layout_width="70dp"
+        android:layout_width="72dp"
         android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="43dp"
-        android:background="#141414"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="25dp"
+        android:background="#EAEAEA"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_masuk" />
 
@@ -90,12 +90,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="1dp"
-        android:text="Lanjutkan Dengan"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="16sp"
+        android:fontFamily="@font/roboto"
+        android:text="Atau"
         android:textColor="#666666"
         android:textSize="16dp"
-        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/view2"
         app:layout_constraintStart_toEndOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/btn_Daftar" />
@@ -104,33 +106,96 @@
         android:id="@+id/view2"
         android:layout_width="70dp"
         android:layout_height="1dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="25dp"
-        android:background="#141414"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="75dp"
+        android:background="#EAEAEA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Daftar" />
 
-    <ImageView
-        android:id="@+id/btn_facebook"
-        android:layout_width="42dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="114dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/fb"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <ImageView
+    <LinearLayout
         android:id="@+id/btn_google"
-        android:layout_width="42dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="114dp"
-        android:background="@drawable/google"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/bg_fb_google"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_facebook"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginBottom="12sp"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/google_lg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MASUK DENGAN GOOGLE"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_fb"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginBottom="12sp"
+            android:src="@drawable/fb_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="MASUK DENGAN FACEBOOK"
+                android:textColor="#FFFF"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

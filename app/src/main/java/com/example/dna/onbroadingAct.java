@@ -8,6 +8,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,7 +25,8 @@ public class onbroadingAct extends AppCompatActivity {
     TabLayout tabIndicator;
     int position = 0;
     TextView lewati;
-    ImageView btn_facebook,btn_google;
+//    ImageView btn_facebook,btn_google;
+    LinearLayout btn_facebook,btn_google;
     Button btn_Daftar,btn_masuk;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
