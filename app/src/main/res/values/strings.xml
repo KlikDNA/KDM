@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">KlikDNA</string>
+    <string name="new_accpunt">Buat Akun baru</string>
+    <string name="Edit_Profile">Ubah profil</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="buat_akun">Buat Akun klikDNA</string>
+    <string name="text_lewati">Lewati</string>
+
+    <string name="text_kode_verifikasi">Kode Verifikasi</string>
+    <string name="text_input_kode_verifikasi">Masukkan kode verifikasi yang dikirimkan \n melalui SMS ke nomor +62 %1$s</string>
+
+    <string name="subtitle_ubah_data">Silahkan ubah data profil anda.</string>
+    <string name="pilih_files">Pilih Files</string>
+    <string name="nama">Nama</string>
+    <string name="tgl_lahir">Tanggal Lahir</string>
+    <string name="jns_kelamin">Jenis Kelamin</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="no_hp">Nomor Handphone</string>
+    <string name="text_62">+62</string>
+    <string name="email">Email</string>
+    <string name="kota">Kota</string>
+
+    <string name="btn_lanjutkan">LANJUTKAN</string>
+
+    <string name="pernyataan_verifikasi">Jika tidak menerima kode verifikasi,</string>
+    <string name="kirim_ulang_kode">Kirim Ulang Kode Verifikasi</string>
+    <string name="berakhir_dalam">Berakhir dalam</string>
+    <string name="detik">detik</string>
+
+    <string name="sunting_profile">Sunting Profil</string>
+
+    <string name="hint_nama">Nama</string>
+    <string name="hint_tgl">Tgl</string>
+    <string name="hint_bulan">Bulan</string>
+    <string name="hint_tahun">Tahun</string>
+    <string name="hint_no_hp">81200000</string>
+    <string name="hint_email">nama@email.com</string>
+    <string name="hint_kota">Kota</string>
+</resources>

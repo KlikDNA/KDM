@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Edit_Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnskip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/text_lewati"
+                android:textColor="#52C2C2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/akun_baru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/sunting_profile"
+                android:textAlignment="center"
+                android:textColor="@color/tittleOnBording"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Intro_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/subtitle_ubah_data"
+                android:textAlignment="center"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dnalogo" />
+
+            <TextView
+                android:id="@+id/tv_pilih_files"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/pilih_files"
+                android:textColor="#52C2C2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/nama"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/hint_nama"
+                android:inputType="textPersonName|textCapWords"
+                android:textSize="16sp"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/txt_tanggallahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/tgl_lahir"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_tgl"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="@string/hint_bulan"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="@string/hint_tahun"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/jns_kelamin"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_kelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_btn_pria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:checked="false"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/pria"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_wanita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/wanita"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/email"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/no_hp"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_62"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/text_62"
+                        android:textSize="16sp"
+                        tools:ignore="Autofill,LabelFor,TextFields" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_no_hp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ll_62"
+                    android:hint="@string/hint_no_hp"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_kota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/kota"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_kota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_kota"
+                android:inputType="textCapWords"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="36dp"
+                android:background="@drawable/bg_btn_next_back"
+                android:fontFamily="@font/roboto"
+                android:text="@string/btn_lanjutkan"
+                android:textAllCaps="false"
+                android:textColor="@color/Textbtn"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
