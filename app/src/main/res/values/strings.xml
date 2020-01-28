@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">KlikDNA</string>
-    <string name="new_accpunt">Buat Akun baru</string>
+    <string name="new_accpunt">Buat Akun Baru</string>
     <string name="Edit_Profile">Ubah profil</string>
     <string name="masuk">Masuk</string>
     <string name="daftar">Daftar</string>
     <string name="buat_akun">Buat Akun klikDNA</string>
+    <string name="text_lengkapi_data">Lengkapi data dirimu di bawah ini</string>
     <string name="text_lewati">Lewati</string>
 
     <string name="text_kode_verifikasi">Kode Verifikasi</string>
@@ -21,6 +22,8 @@
     <string name="text_62">+62</string>
     <string name="email">Email</string>
     <string name="kota">Kota</string>
+    <string name="menyetujui">Saya menyetujui</string>
+    <string name="sk">Syarat dan Ketentuan</string>
 
     <string name="btn_lanjutkan">LANJUTKAN</string>
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".DaftarAct">
 
     <TextView
@@ -27,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto"
-        android:text="Lengkapi data dirimu di bawah ini "
+        android:text="@string/text_lengkapi_data"
         android:textAlignment="center"
         android:textColor="#666666"
         android:textSize="14sp"
@@ -51,17 +52,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto"
-            android:text="Nama"
-            android:textSize="12sp" />
+            android:text="@string/nama"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto"
-            android:hint="Nama"
-            android:inputType="text"
-            android:textSize="14sp"
+            android:hint="@string/hint_nama"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="16sp"
             tools:ignore="Autofill" />
 
         <TextView
@@ -70,18 +72,18 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:fontFamily="@font/roboto"
-            android:text="Email"
-            android:textSize="12sp" />
+            android:text="@string/email"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/emai_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="nama@email.com"
+            android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
-            android:textSize="14sp"
+            android:textSize="16sp"
             tools:ignore="Autofill" />
-
 
         <TextView
             android:id="@+id/nomer_hp"
@@ -89,8 +91,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:fontFamily="@font/roboto"
-            android:text="Nomor Handphone"
-            android:textSize="12sp"
+            android:text="@string/no_hp"
+            android:textSize="14sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/emai_text" />
 
@@ -110,8 +113,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
-                    android:text="+62"
-                    android:textSize="14sp"
+                    android:text="@string/text_62"
+                    android:textSize="16sp"
                     android:focusable="false"
                     android:enabled="false"
                     tools:ignore="Autofill,LabelFor,TextFields" />
@@ -123,9 +126,10 @@
                 android:id="@+id/number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="81200000"
+                android:hint="@string/hint_no_hp"
                 android:inputType="number"
-                android:textSize="14sp"/>
+                android:textSize="16sp"
+                tools:ignore="Autofill" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -137,8 +141,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="saya menyetujui"
-                android:textSize="12sp"/>
+                android:text="@string/menyetujui"
+                android:fontFamily="@font/roboto"
+                android:textSize="14sp"/>
 
             <TextView
                 android:id="@+id/textView7"
@@ -147,9 +152,9 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="23dp"
                 android:fontFamily="@font/roboto"
-                android:text="syarat dan ketentuan"
+                android:text="@string/sk"
                 android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:layout_toEndOf="@+id/checkBox"/>
         </RelativeLayout>
     </LinearLayout>
@@ -164,12 +169,11 @@
         android:layout_marginBottom="55dp"
         android:background="@drawable/bg_btn_next_back"
         android:fontFamily="@font/roboto"
-        android:text="Lanjutkan"
+        android:text="@string/btn_lanjutkan"
         android:textAllCaps="false"
         android:textColor="@color/Textbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

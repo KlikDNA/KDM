@@ -25,7 +25,9 @@
             android:name=".CodeVerivikasi"
             android:theme="@style/TestTheme" />
         <activity android:name=".onbroadingAct" />
-        <activity android:name=".DaftarAct" />
+        <activity
+            android:name=".DaftarAct"
+            android:theme="@style/TestTheme" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
