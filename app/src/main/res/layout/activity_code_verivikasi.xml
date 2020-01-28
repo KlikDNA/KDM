@@ -1,140 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:fillViewport="true"
     tools:context=".CodeVerivikasi">
 
-    <TextView
-        android:id="@+id/Kode_Verifikasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="125dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/text_kode_verifikasi"
-        android:textAlignment="center"
-        android:textColor="@color/tittleOnBording"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/description_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/roboto"
-        android:text=""
-        android:textAlignment="center"
-        android:textColor="#666666"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Kode_Verifikasi" />
-
-    <in.aabhasjindal.otptextview.OtpTextView
-        android:id="@+id/otp_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="60dp"
-        app:height="50dp"
-        app:width="50dp"
-        app:bar_enabled="true"
-        app:bar_height="2dp"
-        app:length="4"
-        app:otp_text_size="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description_code"/>
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="39dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/otp_view">
+        android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/Kode_Verifikasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginTop="45dp"
             android:fontFamily="@font/roboto"
-            android:text="@string/pernyataan_verifikasi"
+            android:text="@string/text_kode_verifikasi"
+            android:textAlignment="center"
+            android:textColor="@color/tittleOnBording"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/description_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
             android:textColor="#666666"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Kode_Verifikasi" />
 
-        <TextView
-            android:id="@+id/tv_kirim_ulang"
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otp_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto"
-            android:text="@string/kirim_ulang_kode"
-            android:textColor="#FE8F8F"
-            android:textSize="14sp" />
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            app:bar_enabled="true"
+            app:bar_height="2dp"
+            app:height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Kode_Verifikasi"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_lantukan"
+            app:length="4"
+            app:otp_text_size="40dp"
+            app:width="50dp" />
 
-        <RelativeLayout
+        <LinearLayout
+            android:id="@+id/ll_aa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:gravity="center">
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="39dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/otp_view">
 
             <TextView
-                android:id="@+id/tv_berakhir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="@font/roboto"
-                android:text="@string/berakhir_dalam"
+                android:text="@string/pernyataan_verifikasi"
                 android:textColor="#666666"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/tv_number_detik"
+                android:id="@+id/tv_kirim_ulang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="3dp"
-                android:layout_marginEnd="3dp"
-                android:layout_toEndOf="@+id/tv_berakhir"
                 android:fontFamily="@font/roboto"
-                android:text="29"
+                android:text="@string/kirim_ulang_kode"
                 android:textColor="#FE8F8F"
                 android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/tv_number_detik"
-                android:fontFamily="@font/roboto"
-                android:text="@string/detik"
-                android:textColor="#666666"
-                android:textSize="14sp" />
+                android:layout_marginTop="28dp"
+                android:gravity="center">
 
-        </RelativeLayout>
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_berakhir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/berakhir_dalam"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/btn_lantukan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="55dp"
-        android:background="@drawable/bg_btn_next_back"
-        android:fontFamily="@font/roboto"
-        android:text="@string/btn_lanjutkan"
-        android:textAllCaps="false"
-        android:textColor="@color/Textbtn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                <TextView
+                    android:id="@+id/tv_number_detik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_toEndOf="@+id/tv_berakhir"
+                    android:fontFamily="@font/roboto"
+                    android:text="29"
+                    android:textColor="#FE8F8F"
+                    android:textSize="14sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tv_number_detik"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/detik"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_lantukan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_btn_next_back"
+            android:fontFamily="@font/roboto"
+            android:text="@string/btn_lanjutkan"
+            android:textAllCaps="false"
+            android:textColor="@color/Textbtn"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
